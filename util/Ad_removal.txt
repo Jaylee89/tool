@@ -1,4 +1,4 @@
-Quickly to remove doc based on console of browser:
+Quickly to remove doc based on console of browser from jianshu.com:
 
 $x("//header")[0].remove()
 $x("//div[@class='rEsl9f']")[0].remove()
