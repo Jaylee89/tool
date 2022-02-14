@@ -14,3 +14,8 @@ python init template
 You need to execute two commands after a new deployment
 1. install depenencies
 2. execute script
+
+
+## 去除水印
+https://xercis.blog.csdn.net/article/details/104948273
+https://zhuanlan.zhihu.com/p/87197507

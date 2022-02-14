@@ -1,0 +1,6 @@
+PyPDF4
+pikepdf
+fitz
+PyMuPDF
+opencv-python
+requests
