@@ -1,0 +1,26 @@
+Quickly to remove doc based on console of browser:
+
+$x("//header")[0].remove()
+$x("//div[@class='rEsl9f']")[0].remove()
+
+var array = ["//header", "//div[@class='rEsl9f']", "//aside", "//div[@class='_1kCBjS']", "//div[@class='_19DgIp']", "//div[@class='_13lIbp']", "//div[@class='d0hShY']", "//section[@class='-umr26']", "//section[@class='ouvJEz']/h3[@class='QxT4hD']", "//section[@class='ouvJEz']/div[@class='_2Nttfz']", "//section[@class='ouvJEz']/ul[@class='_1iTR78']", "//div[@id='note-page-comment']", "//footer", "//article[@class='_2rhmJa']/h4[contains(text(), '下一篇入口')]", "//article[@class='_2rhmJa']/p/a", "//article[@class='_2rhmJa']/h3[contains(text(), '前言')]", "//article[@class='_2rhmJa']/p[contains(text(), '最近公司项目不怎么忙')]", "//article[@class='_2rhmJa']/p/strong[contains(text(), '面试知识点整理')]", "//div[@class='ant-back-top']"]
+
+function removeAd(array) {
+	for(x in array) {
+		var result = $x(array[x])
+		if(result && result.length == 1) {
+			if(result[0].textContent.indexOf("面试知识点整理") > -1) {
+				result[0].parentNode.remove()
+			} else {
+				result[0].remove()
+			}
+			
+		} else if(result && result.length > 1) {
+			for(internal in result) {
+				result[internal].remove()
+			}
+		}
+	}
+}
+
+removeAd(array)
