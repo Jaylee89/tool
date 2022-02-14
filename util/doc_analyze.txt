@@ -1,0 +1,89 @@
+Base64 to image(deprecated):
+http://tool.chinaz.com/tools/imgtobase
+
+
+思想:
+前提：分析页面组成，一般为canvas和图片
+执行：
+若为canvas, 则通过转换成base64字符串，再此转换成png文件
+若为image, 拿到url直接通过api下载图片
+对于拿到的图片，可通过WPS转换成text或通过图片文字识别转换(baidu文字转换api)
+
+
+douding:
+var c=document.getElementsByTagName("canvas")
+var content = ""
+for(x in c) {
+	var tempSrc = c[x].toDataURL("image/png");
+	content = content + tempSrc + "\n"
+}
+saveShareContent(content, "links-png.txt")
+
+
+baidu:
+//div[@id='reader-container']//p
+
+
+var result = document.evaluate("//div[@id='reader-container']//p", document, null, XPathResult.ANY_TYPE, null);
+var nodes = result.iterateNext();
+console.log(nodes.textContent)
+while (nodes){
+	console.log(nodes.textContent)
+	if(nodes.textContent == " ") {console.log("\n")}
+    nodes=result.iterateNext();
+}
+
+
+Sample: https://max.book118.com/html/2016/1209/70084874.shtm
+
+var result = document.evaluate("//div[@class='webpreview-item']/img", document, null, XPathResult.ANY_TYPE, null);
+var nodes = result.iterateNext();
+console.log(nodes.src)
+var index = 0
+while (nodes && index < 27){
+	console.log(nodes.src)
+	if(nodes.textContent == " ") {console.log("\n")}
+    nodes=result.iterateNext();
+    index = index + 1
+}
+
+
+Sample: https://www.renrendoc.com/paper/97554838.html
+
+var result = document.evaluate("//div[@class='page']/img", document, null, XPathResult.ANY_TYPE, null);
+var nodes = result.iterateNext();
+console.log(nodes.src)
+var content = ""
+var index = 0
+while (nodes && index < 8){
+	console.log(nodes.src)
+	if(content == "") {
+		content = nodes.src
+	} else {
+		content = content + "\n" + nodes.src
+	}
+	if(nodes.textContent == " ") {console.log("\n")}
+    nodes=result.iterateNext();
+    index = index + 1
+}
+saveShareContent(content, "links.txt")
+
+
+
+
+======================================================
+
+saved content to file, referring browser download:
+
+function saveShareContent(content, fileName) {
+    let downLink = document.createElement('a')
+    downLink.download = fileName
+    //字符内容转换为blod地址
+    let blob = new Blob([content])
+    downLink.href = URL.createObjectURL(blob)
+    // 链接插入到页面
+    document.body.appendChild(downLink)
+    downLink.click()
+    // 移除下载链接
+    document.body.removeChild(downLink)
+}
