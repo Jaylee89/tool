@@ -1,0 +1,297 @@
+## Fetch LPR every month
+
+[](https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/currency/bk-lpr.json?t=1647868143680)
+
+### Request info
+|Type|details|
+|:-:|:-:|
+|home|https://www.chinamoney.com.cn/chinese/bklpr/?tab=2|
+|Method|POST|
+|Url|https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/currency/bk-lpr.json?t=1647868143680|
+
+### Response data
+```
+{
+    "head":{
+        "version":"2.0",
+        "provider":"CWAP",
+        "req_code":"",
+        "rep_code":"200",
+        "rep_message":"",
+        "ts":1647825322900,
+        "producer":""
+    },
+    "data":{
+        "showDateEN":"21/03/2022 9:15",
+        "showDateCN":"2022-03-21 9:15"
+    },
+    "records":[
+        {
+            "termCode":"1Y",
+            "shibor":"3.70",
+            "shibIdUpDown":"---"
+        },
+        {
+            "termCode":"5Y",
+            "shibor":"4.60",
+            "shibIdUpDown":"---"
+        }
+    ]
+}
+```
+
+### Load more data
+
+|Type|details|
+|:-:|:-:|
+|home|https://www.chinamoney.com.cn/chinese/bklpr/?tab=2|
+|Method|POST|
+|Url|https://www.chinamoney.com.cn/ags/ms/cm-s-notice-query/contentsinshorttime|
+|Body|channelId: 3686, pageSize: 15, pageNo: 1|
+
+### Response data
+```
+{
+    "head":{
+        "version":"2.0",
+        "provider":"CWAP",
+        "req_code":"",
+        "rep_code":"200",
+        "rep_message":"",
+        "ts":1647868810568,
+        "producer":"",
+        "tstext":"2022-03-21 21:20:10"
+    },
+    "data":{
+        "pageTotalSize":3,
+        "total":33
+    },
+    "records":[
+        {
+            "contentId":"2039043",
+            "title":"2022年3月21日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2022-03-21",
+            "channelId":"3686",
+            "titleColor":"#FF0000",
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20220321/2039043.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        },
+        {
+            "contentId":"2306808",
+            "title":"2022年2月21日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2022-02-21",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20220221/2306808.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        },
+        {
+            "contentId":"2291279",
+            "title":"2022年1月20日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2022-01-20",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20220120/2291279.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        },
+        {
+            "contentId":"2291276",
+            "title":"全国银行间同业拆借中心受权发布贷款市场报价利率报价行及发布时间调整公告",
+            "releaseDate":"2022-01-19",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/bklprmkn2/20220119/2291276.html",
+            "cnfdntLvl":"1",
+            "channelPath":"bklprmkn2"
+        },
+        {
+            "contentId":"2269643",
+            "title":"2021年12月20日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2021-12-20",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20211220/2269643.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        },
+        {
+            "contentId":"2106830",
+            "title":"2021年11月22日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2021-11-22",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20211122/2106830.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        },
+        {
+            "contentId":"2080231",
+            "title":"2021年10月20日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2021-10-20",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20211020/2080231.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        },
+        {
+            "contentId":"2064490",
+            "title":"2021年9月22日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2021-09-22",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20210922/2064490.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        },
+        {
+            "contentId":"2039069",
+            "title":"2021年8月20日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2021-08-20",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20210820/2039069.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        },
+        {
+            "contentId":"2014740",
+            "title":"2021年7月20日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2021-07-20",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20210720/2014740.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        },
+        {
+            "contentId":"1987888",
+            "title":"2021年6月21日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2021-06-21",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/bklprmkn2/20210621/1987888.html",
+            "cnfdntLvl":"1",
+            "channelPath":"bklprmkn2"
+        },
+        {
+            "contentId":"1968502",
+            "title":"2021年5月20日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2021-05-20",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/bklprmkn2/20210520/1968502.html",
+            "cnfdntLvl":"1",
+            "channelPath":"bklprmkn2"
+        },
+        {
+            "contentId":"1940550",
+            "title":"2021年4月20日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2021-04-20",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20210420/1940550.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        },
+        {
+            "contentId":"1919650",
+            "title":"2021年3月22日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2021-03-22",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20210322/1919650.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        },
+        {
+            "contentId":"1894573",
+            "title":"2021年2月20日全国银行间同业拆借中心受权公布贷款市场报价利率（LPR）公告",
+            "releaseDate":"2021-02-20",
+            "channelId":"3686",
+            "titleColor":null,
+            "url":null,
+            "bold":false,
+            "txt":1,
+            "attSize":null,
+            "suffix":null,
+            "draftPath":"/chinese/rdgz/20210220/1894573.html",
+            "cnfdntLvl":"1",
+            "channelPath":"rdgz"
+        }
+    ]
+}
+```
